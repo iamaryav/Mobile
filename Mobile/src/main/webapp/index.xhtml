@@ -5,7 +5,7 @@
     xmlns:ui = "http://java.sun.com/jsf/facelets">
     
     <h:head>  
-		<title>Gsmarena</title>
+		<title>#{website.sitetitle}</title>
 		<h:outputScript library = "js" name = "help.js"  />
   		<h:outputStylesheet library="css" name="style.css"  />
   		<style type="text/css">  
@@ -18,7 +18,7 @@
 			padding: 8px;  
 			}  
 			  
-			tr:nth-child(even){background-color: #f2f2f2}  
+			tr:nth-child(even){background-color: #98FB98}  
 			th {  
 			background-color: #4CAF50;  
 			color: white;  
@@ -146,9 +146,10 @@
                     
                 </p>
             </p:tab>
-            <p:tab title="Stores">
-                <p class="p-m-0">
+            <p:tab title="Stores" id="stores">
+                <p class="p-m-0 store_style_parent" >
                    
+                   <div class="store_style_parent">
                 	<div class="store_style">
                 		
 						<h:graphicImage value = "http://www.tutorialspoint.com/images/jsf-mini-logo.png"/> 
@@ -199,30 +200,8 @@
                 		
                 	</div>
                     
-                </p>
-                <p class="p-m-0">
-                   
-                    
-                </p>
-                <p class="p-m-0">
-                   
-                    
-                </p>
-                
-                <p class="p-m-0">
-                  
-                    
-                </p>
-                
-                <p class="p-m-0">
-                   
-                    
-                </p>
-                
-                <p class="p-m-0">
-                   
-                    
-                </p>
+               </div>
+               </p>
             </p:tab>
         </p:tabView>
     </div>
